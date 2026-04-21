@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* MAIN NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.nav-logo h2 {
+    color: #ff9900;
+    cursor: pointer;
+}
+
+/* Location */
+.nav-location {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav-location strong {
+    display: block;
+    font-size: 14px;
+}
+
+/* Search */
+.nav-search {
+    display: flex;
+    flex: 1;
+    margin: 0 15px;
+}
+
+.nav-search select {
+    padding: 8px;
+    border: none;
+    background: #ddd;
+}
+
+.nav-search input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.nav-search button {
+    background: #febd69;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Account & Orders */
+.nav-account,
+.nav-orders {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav-account strong,
+.nav-orders strong {
+    display: block;
+    font-size: 14px;
+}
+
+/* Cart */
+.nav-cart {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* SUB NAVBAR */
+.sub-navbar {
+    background-color: #232f3e;
+    padding: 8px 20px;
+}
+
+.sub-navbar a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sub-navbar a:hover {
+    text-decoration: underline;
+}
+
+/* HOVER EFFECTS */
+.navbar div:hover {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-search {
+        display: none;
+    }
+
+    .sub-navbar {
+        display: none;
+    }
+}
